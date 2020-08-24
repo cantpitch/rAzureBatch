@@ -35,7 +35,7 @@ BatchServiceClient <- R6::R6Class(
     jobOperations = NULL,
     taskOperations = NULL,
     fileOperations = NULL,
-    apiVersion = "2018-03-01.6.1",
+    apiVersion = "2020-03-01.11.0",
     verbose = FALSE,
     initialize = function(url = NA, authentication = NA) {
       self$url <- url
