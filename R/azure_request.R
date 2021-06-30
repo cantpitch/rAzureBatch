@@ -64,8 +64,6 @@ AzureServiceClient <- R6::R6Class(
       if (!is.null(verbose$azureHttpTraffic)
           && verbose$azureHttpTraffic == TRUE) {
         request$verbose <- httr::verbose()
-
-        message(paste0(request$method, ": ", url, "?", request$query))
       }
 
       if (request$method == "GET" ||
