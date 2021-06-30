@@ -38,7 +38,7 @@ PoolOperations <- R6::R6Class("PoolOperations",
         virtualMachineConfiguration <- args$virtualMachineConfiguration
       }
 
-      taskSlotsPerNode <- ""
+      taskSlotsPerNode <- 1
       if (!is.null(args$taskSlotsPerNode)) {
         taskSlotsPerNode <- args$taskSlotsPerNode
       }
