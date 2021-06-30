@@ -38,9 +38,9 @@ PoolOperations <- R6::R6Class("PoolOperations",
         virtualMachineConfiguration <- args$virtualMachineConfiguration
       }
 
-      maxTasksPerNode <- ""
-      if (!is.null(args$maxTasksPerNode)) {
-        maxTasksPerNode <- args$maxTasksPerNode
+      taskSlotsPerNode <- ""
+      if (!is.null(args$taskSlotsPerNode)) {
+        taskSlotsPerNode <- args$taskSlotsPerNode
       }
 
       enableAutoScale <- FALSE
@@ -74,7 +74,7 @@ PoolOperations <- R6::R6Class("PoolOperations",
         enableAutoScale = enableAutoScale,
         autoScaleFormula = autoscaleFormula,
         autoScaleEvaluationInterval = autoScaleEvaluationInterval,
-        maxTasksPerNode = maxTasksPerNode,
+        taskSlotsPerNode = taskSlotsPerNode,
         networkConfiguration = networkConfiguration
       )
 
